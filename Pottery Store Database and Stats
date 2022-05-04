@@ -1,1 +1,28 @@
-https://www.khanacademy.org/computer-programming/spin-off-of-project-design-a-store-database/6636285920854016
+
+
+create table pottery (id integer primary key, name text, quantity integer, size text, cost integer);
+INSERT INTO pottery VALUES (1, "Plates", 12, "10 inch", 8.00);
+INSERT INTO pottery VALUES (2, "Plates", 12, "8 inch", 7.00);
+INSERT INTO pottery VALUES (3, "Plates", 12, "6 inch", 6.00);
+INSERT INTO pottery VALUES (4, "Bowls", 36, "8 inch", 8.00);
+INSERT INTO pottery VALUES (5, "Bowls", 36, "6 inch", 7.00);
+INSERT INTO pottery VALUES (6, "Bowls", 36, "4 inch", 6.00);
+INSERT INTO pottery VALUES (7, "Mugs", 24, "8oz", 7.00);
+INSERT INTO pottery VALUES (8, "Mugs", 24, "12oz", 8.00);
+INSERT INTO pottery VALUES (9, "Platters", 5, "12 inch", 12.00);
+INSERT INTO pottery VALUES (10, "Platters", 5, "14 inch", 15.00);
+INSERT INTO pottery VALUES (11, "Serving Bowls", 8, "10 inch", 10.00);
+INSERT INTO pottery VALUES (12, "Serving Bowls", 8, "12 inch", 12.00);
+INSERT INTO pottery VALUES (13, "Vases", 3, "small", 6.00);
+INSERT INTO pottery VALUES (14, "Vases", 3, "medium", 10.00);
+INSERT INTO pottery VALUES (15, "Vases", 3, "large", 15.00);
+
+select * from pottery;
+select * from pottery order by cost;
+select * from pottery order by cost desc;
+select * from pottery order by quantity desc;
+select sum (quantity) from pottery;
+select sum (cost*quantity) from pottery;
+
+
+
